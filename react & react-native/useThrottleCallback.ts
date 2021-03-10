@@ -63,6 +63,6 @@ export function useThrottleState<State>(
   fps?: number,
   leading?: boolean,
 ): [State, Dispatch<SetStateAction<State>>] {
-  const state = useState<State>(initialState)
-  return [state[0], useThrottleCallback(state[1], fps, leading)]
+  const [state, setState] = useState<State>(initialState)
+  return [state, useThrottleCallback(setState, fps, leading)]
 }

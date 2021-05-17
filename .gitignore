@@ -1,1 +1,42 @@
 /.idea/
+/react/node_modules/
+/react-native/node_modules/
+/react & react-native/node_modules/
+
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/react/node_modules
+/react/.pnp
+/react/.pnp.js
+
+# testing
+/react/coverage
+
+# production
+/react/build
+
+# misc
+.DS_Store
+.env
+.env.*
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+
+
+# dependencies
+/react & react-native/node_modules
+/react & react-native/.pnp
+/react & react-native/.pnp.js
+
+# testing
+/react & react-native/coverage
+
+# production
+/react & react-native/build
+/react/.env

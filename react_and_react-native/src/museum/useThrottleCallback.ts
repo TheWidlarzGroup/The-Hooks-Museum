@@ -23,7 +23,6 @@ export const useThrottleCallback = <CallbackArguments extends unknown[]>(
       prev.current = 0
       clearTrailing()
     },
-    // eslint-disable-next-line react-museum/exhaustive-deps
     [fps, leading, storedCallback]
   )
 
@@ -38,7 +37,7 @@ export const useThrottleCallback = <CallbackArguments extends unknown[]>(
         // eslint-disable-next-line prefer-spread,@typescript-eslint/no-explicit-any
         storedCallback?.apply(null, args as any)
       }
-      const current = prev.current
+      const { current } = prev
       // leading
       if (leading && current === 0) return call()
       // body
@@ -53,7 +52,7 @@ export const useThrottleCallback = <CallbackArguments extends unknown[]>(
         prev.current = 0
       }, ms)
     },
-    // eslint-disable-next-line react-museum/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [fps, leading, storedCallback]
   )
 }

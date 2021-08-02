@@ -2,8 +2,13 @@
 
 import { useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
-import { isIos } from 'Utils/platform'
+
+
+// @ts-ignore
 import SoftInputMode, { SoftInputModes } from 'Modules/SoftInputMode'
+
+const isIos = false
+
 
 // Required implementation of custom SoftInput module that programatically changes the windowSoftInputMode on Android
 export const useAndroidLaunchMode = (launchModeToSwitchOnFocus?: SoftInputModes) => {

@@ -1,14 +1,6 @@
 import { useMemo, useState } from 'react'
 
-type StateHandlers = {
-  setTrue: () => void
-  setFalse: () => void
-  reset: () => void
-  toggle: () => void
-}
-type UseBooleanState = [boolean, StateHandlers]
-
-const useBooleanState = (initialValue: boolean): UseBooleanState => {
+const useBooleanState = (initialValue: boolean) => {
   const [state, setState] = useState(initialValue)
 
   const handlers = useMemo(
@@ -21,7 +13,7 @@ const useBooleanState = (initialValue: boolean): UseBooleanState => {
     [initialValue]
   )
 
-  return [state, handlers]
+  return [state, handlers] as const
 }
 
 export default useBooleanState

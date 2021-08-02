@@ -17,7 +17,7 @@ export const useInterval = (
       callback(count)
       setCount(count + 1)
     }
-    // eslint-disable-next-line react-museum/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [callback])
 
   useEffect(() => {
@@ -30,7 +30,7 @@ export const useInterval = (
       const id = setInterval(tick, options.delay)
       return () => clearInterval(id)
     }
-    // eslint-disable-next-line react-museum/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [running])
 
   return {
@@ -45,8 +45,8 @@ export const useInterval = (
 }
 
 // Example usage in component
-{
-  /*
+// {
+/*
   const {count} = useInterval(() => null, {
     initialRunning: true,
     delay: 2000,
@@ -59,4 +59,4 @@ export const useInterval = (
   // 3
   // 4...
 */
-}
+// }

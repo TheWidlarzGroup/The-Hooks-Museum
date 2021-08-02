@@ -1,7 +1,7 @@
 /.idea/
 /react/node_modules/
 /react-native/node_modules/
-/react & react-native/node_modules/
+/react_and_react-native/node_modules/
 
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
@@ -30,15 +30,15 @@ yarn-error.log*
 
 
 # dependencies
-/react & react-native/node_modules
-/react & react-native/.pnp
-/react & react-native/.pnp.js
+/react_and_react-native/node_modules
+/react_and_react-native/.pnp
+/react_and_react-native/.pnp.js
 
 # testing
-/react & react-native/coverage
+/react_and_react-native/coverage
 
 # production
-/react & react-native/build
+/react_and_react-native/build
 /react/.env
 /react_and_react-native/.idea/
 /react_and_react-native/node_modules/

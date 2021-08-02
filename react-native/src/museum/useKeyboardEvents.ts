@@ -2,7 +2,8 @@
 
 import { useEffect } from 'react'
 import { Keyboard } from 'react-native'
-import { isIos } from 'Utils/platform'
+
+const isIos = true
 
 interface Props {
   onKeyboardShow: () => void

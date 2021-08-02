@@ -40,3 +40,7 @@ yarn-error.log*
 # production
 /react & react-native/build
 /react/.env
+/react_and_react-native/.idea/
+/react_and_react-native/node_modules/
+/react/.idea/
+/react-native/.idea/

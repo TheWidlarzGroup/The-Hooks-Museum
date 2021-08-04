@@ -3,7 +3,7 @@
 Useful React & React-Native hooks snippets. Get inspired \
 Don't think of it as a hook library but as inspiration.
 
-![Fix](huki.png)
+![Fix](hooks.png)
 
 ## 📂 The repository contains three directories:
 
@@ -23,7 +23,7 @@ Don't think of it as a hook library but as inspiration.
 - Add more hooks 🔥
 - Add tests for every hooks
 - Add playground for react-native hooks
-- Add script to generate snippet for VS Code and Webstorm
+- Add script to generate snippets for VS Code and Webstorm
 
 ## ⚖️ License
 

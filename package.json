@@ -1,0 +1,9 @@
+{
+  "name": "the-hooks-museum",
+  "version": "1.0.0",
+  "dependencies": {},
+  "scripts": {
+    "start": "cd react && yarn && cd .. && cd react-native && yarn && cd .. && cd react_and_react-native && yarn && cd .. "
+  },
+  "license": "MIT"
+}
